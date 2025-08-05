@@ -2,7 +2,7 @@
 A Frontend Web Developer 🎯 and Freelance Designer 🎨 from India.
 
 - 👨‍💻 Frontend Web Developer with real-world freelance and product experience  
-- 🚀 Passionate about building pixel-perfect UIs and responsive web apps  
+- 🚀 Passionate about building pixel-perfect UIs, fixing SEO and responsive web apps  
 - 📚 What do I believe? Jack of all, Master of some  
 
 ---
