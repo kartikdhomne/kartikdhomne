@@ -7,7 +7,7 @@ A Frontend Web Developer 🎯 and Freelancer 🎨 from India.
 
 ---
 
-**🧠 Languages & Tools:**  
+**🧠 Languages && Tools:**  
 
 <code><img height="20" src="https://raw.githubusercontent.com/github/explore/main/topics/html/html.png"></code>
 <code><img height="20" src="https://raw.githubusercontent.com/github/explore/main/topics/css/css.png"></code>
