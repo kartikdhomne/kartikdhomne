@@ -30,7 +30,7 @@ A Frontend Web Developer 🎯 and Freelancer 🎨 from India.
 
 ---
 
-### 🤝 Connect with me
+### 🤝 Connect with me to work together 
 
 <p align="center">
   <a href="https://www.linkedin.com/in/kartik-dhomne/"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-Kartik%20Dhomne-blue?style=flat-square&logo=linkedin"></a>
