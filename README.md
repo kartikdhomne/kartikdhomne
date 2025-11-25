@@ -34,6 +34,16 @@ A Frontend Web Developer 🎯 and Freelancer 🎨 from India.
 ### 🤝 Connect with me to work together 
 
 <p align="center">
-  <a href="https://www.linkedin.com/in/kartik-dhomne/"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-Kartik%20Dhomne-blue?style=flat-square&logo=linkedin"></a>
-  <a href="mailto:kartikdhomne@gmail.com"><img alt="Email" src="https://img.shields.io/badge/Email-kartikdhomne@gmail.com-blue?style=flat-square&logo=gmail"></a>
+  <a href="https://www.linkedin.com/in/kartik-dhomne/">
+    <img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-Kartik%20Dhomne-blue?style=flat-square&logo=linkedin">
+  </a>
+
+  <a href="mailto:kartikdhomne1997@gmail.com">
+    <img alt="Email" src="https://img.shields.io/badge/Email-kartikdhomne@gmail.com-blue?style=flat-square&logo=gmail">
+  </a>
+
+  <a href="https://kartikdhomne.vercel.app">
+    <img alt="Website" src="https://img.shields.io/badge/Portfolio-kartikdhomne.dev-green?style=flat-square&logo=google-chrome">
+  </a>
 </p>
+
