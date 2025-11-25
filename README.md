@@ -24,6 +24,7 @@ A Frontend Web Developer 🎯 and Freelancer 🎨 from India.
 ---
 
 ![Kartik's GitHub stats](https://github-readme-stats.vercel.app/api?username=kartikdhomne&theme=tokyonight&show_icons=true)
+
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=kartikdhomne&theme=tokyonight&layout=compact)
 
 ![](https://komarev.com/ghpvc/?username=kartikdhomne&label=Profile%20Views&color=0e75b6&style=flat)
