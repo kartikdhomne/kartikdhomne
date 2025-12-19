@@ -1,7 +1,7 @@
 ### Hi there, I'm Kartik 👋  
-A Frontend Web Developer 🎯 and Freelancer 🎨 from India.
+A Senior Frontend Web Developer 🎯 and Freelancer 🎨 from India.
 
-- 👨‍💻 Frontend Web Developer with real-world freelance and product experience  
+- 👨‍💻 Frontend Web Developer with real-world freelance and product experience and expertise 
 - 🚀 Passionate about building pixel-perfect UIs, fixing SEO, improving Lighthouse score and responsive web apps with animation 
 - 📚 What do I believe? Jack of all, Master of some  
 
