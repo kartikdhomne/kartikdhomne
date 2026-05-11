@@ -201,7 +201,7 @@
 <a href="https://www.linkedin.com/in/kartik-dhomne/">
   <img src="https://img.shields.io/badge/%F0%9F%94%97%20LinkedIn-0077B5?style=for-the-badge" />
 </a>
-<a href="https://kartikdhomne.github.io/kartikd-portfolio">
+<a href="https://kartikdhomne.vercel.app">
   <img src="https://img.shields.io/badge/%F0%9F%8C%90%20Portfolio-7c3aed?style=for-the-badge" />
 </a>
 <a href="mailto:kartikdhomne1997@gmail.com">
