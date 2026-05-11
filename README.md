@@ -1,49 +1,610 @@
-### Hi there, I'm Kartik 👋  
-A Senior Frontend Web Developer 🎯 and Freelancer 🎨 from India.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Kartik Dhomne — Frontend Engineer</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet"/>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  :root{
+    --purple:#7c3aed;--purple-light:#a78bfa;--purple-dark:#4c1d95;
+    --cyan:#06b6d4;--cyan-light:#67e8f9;
+    --bg:#060612;--bg2:#0d0d1f;--bg3:#13132a;
+    --text:#e2e8f0;--text2:#94a3b8;--text3:#475569;
+    --border:rgba(124,58,237,0.2);
+    --glow:0 0 40px rgba(124,58,237,0.3);
+  }
+  html{scroll-behavior:smooth}
+  body{
+    font-family:'Space Grotesk',sans-serif;
+    background:var(--bg);color:var(--text);
+    overflow-x:hidden;line-height:1.6;
+  }
 
-- 👨‍💻 Frontend Web Developer with real-world freelance and product experience and expertise 
-- 🚀 Passionate about building pixel-perfect UIs, fixing SEO, improving Lighthouse score and responsive web apps with animation 
-- 📚 What do I believe? Jack of all, Master of some  
+  /* ── CANVAS STARFIELD ── */
+  #stars{position:fixed;inset:0;z-index:0;pointer-events:none}
 
----
+  /* ── NOISE TEXTURE ── */
+  body::before{
+    content:'';position:fixed;inset:0;z-index:0;
+    background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");
+    pointer-events:none;opacity:0.4;
+  }
 
-**🧠 Languages && Tools:**  
+  /* ── GRID LINES ── */
+  body::after{
+    content:'';position:fixed;inset:0;z-index:0;
+    background-image:
+      linear-gradient(rgba(124,58,237,0.04) 1px,transparent 1px),
+      linear-gradient(90deg,rgba(124,58,237,0.04) 1px,transparent 1px);
+    background-size:60px 60px;pointer-events:none;
+  }
 
-<code><img height="20" src="https://raw.githubusercontent.com/github/explore/main/topics/html/html.png"></code>
-<code><img height="20" src="https://raw.githubusercontent.com/github/explore/main/topics/css/css.png"></code>
-<code><img height="20" src="https://raw.githubusercontent.com/github/explore/main/topics/javascript/javascript.png"></code>
-<code><img height="20" src="https://raw.githubusercontent.com/github/explore/main/topics/typescript/typescript.png"></code>
-<code><img height="20" src="https://raw.githubusercontent.com/github/explore/main/topics/react/react.png"></code>
-<code><img height="20" src="https://raw.githubusercontent.com/github/explore/main/topics/nextjs/nextjs.png"></code>
-<code><img height="20" src="https://raw.githubusercontent.com/github/explore/main/topics/nodejs/nodejs.png"></code>
-<code><img height="20" src="https://raw.githubusercontent.com/github/explore/main/topics/sass/sass.png"></code>
-<code><img height="20" src="https://raw.githubusercontent.com/github/explore/main/topics/tailwind/tailwind.png"></code>
-<code><img height="20" src="https://raw.githubusercontent.com/github/explore/main/topics/git/git.png"></code>
-<code><img height="20" src="https://raw.githubusercontent.com/github/explore/main/topics/bootstrap/bootstrap.png"></code>
+  /* ── CURSOR GLOW ── */
+  .cursor-glow{
+    position:fixed;width:400px;height:400px;border-radius:50%;
+    background:radial-gradient(circle,rgba(124,58,237,0.08) 0%,transparent 70%);
+    pointer-events:none;z-index:1;transform:translate(-50%,-50%);
+    transition:all 0.1s ease;
+  }
 
----
+  /* ── LAYOUT ── */
+  .wrapper{position:relative;z-index:2;max-width:900px;margin:0 auto;padding:0 24px}
 
-![Kartik's GitHub stats](https://github-readme-stats.vercel.app/api?username=kartikdhomne&theme=tokyonight&show_icons=true)
+  /* ── NAV ── */
+  nav{
+    position:fixed;top:0;left:0;right:0;z-index:100;
+    padding:16px 24px;
+    display:flex;align-items:center;justify-content:space-between;
+    background:rgba(6,6,18,0.8);
+    backdrop-filter:blur(20px);
+    border-bottom:1px solid var(--border);
+  }
+  .nav-logo{
+    font-family:'Fira Code',monospace;font-size:14px;
+    color:var(--purple-light);letter-spacing:0.05em;
+  }
+  .nav-links{display:flex;gap:28px}
+  .nav-links a{
+    font-size:13px;color:var(--text2);text-decoration:none;
+    letter-spacing:0.05em;transition:color 0.2s;
+  }
+  .nav-links a:hover{color:var(--purple-light)}
 
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=kartikdhomne&theme=tokyonight&layout=compact)
+  /* ── HERO ── */
+  .hero{
+    min-height:100vh;display:flex;align-items:center;
+    padding:100px 0 60px;
+  }
+  .hero-inner{width:100%}
+  .hero-tag{
+    display:inline-flex;align-items:center;gap:8px;
+    font-family:'Fira Code',monospace;font-size:12px;
+    color:var(--purple-light);letter-spacing:0.1em;text-transform:uppercase;
+    padding:6px 14px;border:1px solid var(--border);border-radius:999px;
+    margin-bottom:28px;
+    animation:fadeUp 0.6s ease both;
+  }
+  .hero-tag::before{
+    content:'';width:6px;height:6px;border-radius:50%;
+    background:var(--cyan);animation:pulse 2s infinite;
+  }
+  @keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:0.5;transform:scale(0.8)}}
 
-![](https://komarev.com/ghpvc/?username=kartikdhomne&label=Profile%20Views&color=0e75b6&style=flat)
+  .hero-name{
+    font-size:clamp(48px,8vw,88px);font-weight:700;line-height:1;
+    letter-spacing:-0.03em;margin-bottom:16px;
+    animation:fadeUp 0.6s 0.1s ease both;
+  }
+  .hero-name .line1{display:block;color:var(--text)}
+  .hero-name .line2{
+    display:block;
+    background:linear-gradient(135deg,var(--purple-light) 0%,var(--cyan) 100%);
+    -webkit-background-clip:text;-webkit-text-fill-color:transparent;
+    background-clip:text;
+  }
+  .hero-role{
+    font-size:18px;color:var(--text2);margin-bottom:40px;
+    font-weight:400;letter-spacing:0.02em;
+    animation:fadeUp 0.6s 0.2s ease both;
+  }
+  .hero-role span{color:var(--purple-light);font-weight:500}
 
----
+  .hero-ctas{
+    display:flex;flex-wrap:wrap;gap:12px;margin-bottom:60px;
+    animation:fadeUp 0.6s 0.3s ease both;
+  }
+  .btn{
+    display:inline-flex;align-items:center;gap:8px;
+    padding:12px 24px;border-radius:8px;font-size:14px;
+    font-weight:500;text-decoration:none;letter-spacing:0.02em;
+    transition:all 0.25s ease;cursor:pointer;border:none;
+    font-family:'Space Grotesk',sans-serif;
+  }
+  .btn-primary{
+    background:linear-gradient(135deg,var(--purple),#5b21b6);
+    color:#fff;
+    box-shadow:0 0 0 0 rgba(124,58,237,0);
+  }
+  .btn-primary:hover{
+    transform:translateY(-2px);
+    box-shadow:0 8px 30px rgba(124,58,237,0.4);
+  }
+  .btn-secondary{
+    background:transparent;color:var(--text);
+    border:1px solid var(--border);
+  }
+  .btn-secondary:hover{
+    background:rgba(124,58,237,0.08);border-color:var(--purple-light);
+    transform:translateY(-2px);
+  }
+  .btn-ghost{
+    background:transparent;color:var(--text2);
+    border:1px solid rgba(255,255,255,0.08);font-size:13px;padding:10px 18px;
+  }
+  .btn-ghost:hover{color:var(--text);border-color:rgba(255,255,255,0.2);transform:translateY(-1px)}
 
-### 🤝 Connect with me to work together 
+  .hero-stats{
+    display:flex;flex-wrap:wrap;gap:32px;
+    animation:fadeUp 0.6s 0.4s ease both;
+  }
+  .stat{display:flex;flex-direction:column;gap:2px}
+  .stat-num{
+    font-size:28px;font-weight:700;
+    background:linear-gradient(135deg,var(--purple-light),var(--cyan));
+    -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
+  }
+  .stat-label{font-size:12px;color:var(--text3);letter-spacing:0.05em;text-transform:uppercase}
 
-<p align="center">
-  <a href="https://www.linkedin.com/in/kartik-dhomne/">
-    <img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-Kartik%20Dhomne-blue?style=flat-square&logo=linkedin">
-  </a>
+  @keyframes fadeUp{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
 
-  <a href="mailto:kartikdhomne1997@gmail.com">
-    <img alt="Email" src="https://img.shields.io/badge/Email-kartikdhomne@gmail.com-blue?style=flat-square&logo=gmail">
-  </a>
+  /* ── SECTIONS ── */
+  section{padding:100px 0}
+  .section-label{
+    font-family:'Fira Code',monospace;font-size:12px;
+    color:var(--purple-light);letter-spacing:0.15em;text-transform:uppercase;
+    margin-bottom:12px;display:flex;align-items:center;gap:10px;
+  }
+  .section-label::after{content:'';flex:1;max-width:60px;height:1px;background:var(--border)}
+  .section-title{
+    font-size:clamp(28px,4vw,40px);font-weight:700;
+    letter-spacing:-0.02em;margin-bottom:48px;color:var(--text);
+  }
 
-  <a href="https://kartikdhomne.vercel.app">
-    <img alt="Website" src="https://img.shields.io/badge/Portfolio-kartikdhomne.dev-green?style=flat-square&logo=google-chrome">
-  </a>
-</p>
+  /* ── ABOUT ── */
+  .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
+  .about-text p{font-size:16px;color:var(--text2);line-height:1.8;margin-bottom:16px}
+  .about-text p strong{color:var(--purple-light)}
+  .about-beliefs{margin-top:24px}
+  .belief{
+    display:flex;align-items:flex-start;gap:12px;padding:14px 0;
+    border-bottom:1px solid rgba(255,255,255,0.04);
+  }
+  .belief:last-child{border:none}
+  .belief-icon{
+    width:32px;height:32px;border-radius:8px;
+    background:rgba(124,58,237,0.12);border:1px solid var(--border);
+    display:flex;align-items:center;justify-content:center;
+    font-size:15px;flex-shrink:0;margin-top:1px;
+  }
+  .belief-text{font-size:14px;color:var(--text2);line-height:1.6}
+  .belief-text strong{color:var(--text);display:block;margin-bottom:2px;font-size:14px}
 
+  .impact-cards{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  .impact-card{
+    padding:20px;border-radius:12px;
+    background:var(--bg2);border:1px solid var(--border);
+    transition:all 0.3s ease;position:relative;overflow:hidden;
+  }
+  .impact-card::before{
+    content:'';position:absolute;inset:0;
+    background:linear-gradient(135deg,rgba(124,58,237,0.06),transparent);
+    opacity:0;transition:opacity 0.3s;
+  }
+  .impact-card:hover{transform:translateY(-3px);border-color:rgba(124,58,237,0.4);box-shadow:var(--glow)}
+  .impact-card:hover::before{opacity:1}
+  .impact-num{
+    font-size:26px;font-weight:700;
+    background:linear-gradient(135deg,var(--purple-light),var(--cyan));
+    -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
+    margin-bottom:4px;
+  }
+  .impact-desc{font-size:12px;color:var(--text3);letter-spacing:0.03em;text-transform:uppercase}
+
+  /* ── TECH STACK ── */
+  .stack-categories{display:flex;flex-direction:column;gap:32px}
+  .stack-cat-label{
+    font-size:11px;color:var(--text3);letter-spacing:0.12em;
+    text-transform:uppercase;margin-bottom:14px;font-family:'Fira Code',monospace;
+  }
+  .stack-pills{display:flex;flex-wrap:wrap;gap:10px}
+  .pill{
+    display:inline-flex;align-items:center;gap:8px;
+    padding:8px 16px;border-radius:8px;font-size:13px;font-weight:500;
+    background:var(--bg2);border:1px solid var(--border);color:var(--text2);
+    transition:all 0.25s ease;cursor:default;
+  }
+  .pill:hover{
+    background:rgba(124,58,237,0.12);border-color:var(--purple-light);
+    color:var(--text);transform:translateY(-2px);
+    box-shadow:0 4px 20px rgba(124,58,237,0.2);
+  }
+  .pill-icon{font-size:16px;line-height:1}
+
+  /* ── EXPERIENCE ── */
+  .exp-list{display:flex;flex-direction:column;gap:0}
+  .exp-item{
+    display:grid;grid-template-columns:120px 1fr;gap:32px;
+    padding:32px 0;border-bottom:1px solid rgba(255,255,255,0.04);
+    position:relative;
+  }
+  .exp-item:last-child{border:none}
+  .exp-item::before{
+    content:'';position:absolute;left:115px;top:36px;bottom:0;
+    width:1px;background:linear-gradient(to bottom,var(--purple),transparent);
+  }
+  .exp-item:last-child::before{display:none}
+  .exp-date{font-family:'Fira Code',monospace;font-size:11px;color:var(--text3);padding-top:4px;line-height:1.6}
+  .exp-dot{
+    position:absolute;left:111px;top:36px;
+    width:9px;height:9px;border-radius:50%;
+    background:var(--purple-light);border:2px solid var(--bg);
+    box-shadow:0 0 12px rgba(167,139,250,0.6);
+  }
+  .exp-role{font-size:18px;font-weight:600;color:var(--text);margin-bottom:4px}
+  .exp-company{
+    display:inline-flex;align-items:center;gap:6px;
+    font-size:13px;color:var(--purple-light);margin-bottom:14px;font-weight:500;
+  }
+  .exp-bullets{list-style:none;display:flex;flex-direction:column;gap:8px}
+  .exp-bullets li{
+    font-size:14px;color:var(--text2);line-height:1.6;
+    display:flex;align-items:flex-start;gap:10px;
+  }
+  .exp-bullets li::before{
+    content:'▹';color:var(--purple-light);flex-shrink:0;margin-top:1px;
+  }
+  .exp-bullets li strong{color:var(--purple-light)}
+  .exp-tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:14px}
+  .exp-tag{
+    font-size:11px;padding:3px 10px;border-radius:999px;
+    background:rgba(124,58,237,0.1);border:1px solid rgba(124,58,237,0.2);
+    color:var(--purple-light);font-family:'Fira Code',monospace;
+  }
+
+  /* ── EDUCATION ── */
+  .edu-card{
+    padding:28px 32px;border-radius:16px;
+    background:var(--bg2);border:1px solid var(--border);
+    display:flex;align-items:center;gap:24px;
+    position:relative;overflow:hidden;
+  }
+  .edu-card::after{
+    content:'';position:absolute;top:-40px;right:-40px;
+    width:200px;height:200px;border-radius:50%;
+    background:radial-gradient(circle,rgba(124,58,237,0.08),transparent 70%);
+  }
+  .edu-icon{
+    width:56px;height:56px;border-radius:14px;flex-shrink:0;
+    background:linear-gradient(135deg,var(--purple),#5b21b6);
+    display:flex;align-items:center;justify-content:center;font-size:24px;
+  }
+  .edu-degree{font-size:17px;font-weight:600;color:var(--text);margin-bottom:4px}
+  .edu-meta{font-size:13px;color:var(--text2)}
+  .edu-meta span{color:var(--purple-light);font-weight:600}
+
+  /* ── INTERESTS ── */
+  .interests-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+  .interest-card{
+    padding:24px 16px;border-radius:14px;text-align:center;
+    background:var(--bg2);border:1px solid var(--border);
+    transition:all 0.3s ease;cursor:default;
+  }
+  .interest-card:hover{
+    transform:translateY(-4px) scale(1.02);
+    border-color:rgba(124,58,237,0.4);box-shadow:var(--glow);
+  }
+  .interest-emoji{font-size:32px;margin-bottom:10px;display:block}
+  .interest-name{font-size:14px;font-weight:600;color:var(--text);margin-bottom:4px}
+  .interest-sub{font-size:12px;color:var(--text3)}
+
+  /* ── CONNECT ── */
+  .connect-box{
+    padding:56px;border-radius:24px;text-align:center;
+    background:var(--bg2);border:1px solid var(--border);
+    position:relative;overflow:hidden;
+  }
+  .connect-box::before{
+    content:'';position:absolute;top:50%;left:50%;
+    transform:translate(-50%,-50%);
+    width:600px;height:300px;border-radius:50%;
+    background:radial-gradient(ellipse,rgba(124,58,237,0.1),transparent 70%);
+  }
+  .connect-box h2{font-size:32px;font-weight:700;margin-bottom:12px;position:relative}
+  .connect-box p{font-size:16px;color:var(--text2);margin-bottom:36px;position:relative}
+  .connect-links{display:flex;flex-wrap:wrap;justify-content:center;gap:12px;position:relative}
+
+  /* ── FOOTER ── */
+  footer{
+    padding:24px;text-align:center;
+    border-top:1px solid rgba(255,255,255,0.04);
+    font-size:12px;color:var(--text3);font-family:'Fira Code',monospace;
+  }
+
+  /* ── SCROLL REVEAL ── */
+  .reveal{opacity:0;transform:translateY(30px);transition:all 0.7s cubic-bezier(0.16,1,0.3,1)}
+  .reveal.visible{opacity:1;transform:translateY(0)}
+
+  @media(max-width:640px){
+    .about-grid{grid-template-columns:1fr}
+    .impact-cards{grid-template-columns:1fr 1fr}
+    .interests-grid{grid-template-columns:1fr 1fr}
+    .exp-item{grid-template-columns:1fr;gap:8px}
+    .exp-item::before,.exp-dot{display:none}
+    .connect-box{padding:32px 24px}
+    nav .nav-links{display:none}
+  }
+</style>
+</head>
+<body>
+
+<canvas id="stars"></canvas>
+<div class="cursor-glow" id="glow"></div>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-logo">kartik.dev</div>
+  <div class="nav-links">
+    <a href="#about">About</a>
+    <a href="#stack">Stack</a>
+    <a href="#experience">Experience</a>
+    <a href="#connect">Connect</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<div class="wrapper">
+  <section class="hero" id="home">
+    <div class="hero-inner">
+      <div class="hero-tag">Available for opportunities 🚀</div>
+      <h1 class="hero-name">
+        <span class="line1">Kartik</span>
+        <span class="line2">Dhomne</span>
+      </h1>
+      <p class="hero-role">
+        <span>Frontend Engineer</span> · React · Next.js · TypeScript<br/>
+        Building pixel-perfect, blazing-fast UIs from India 🇮🇳
+      </p>
+      <div class="hero-ctas">
+        <a href="https://kartikdhomne.vercel.app" target="_blank" class="btn btn-primary">🌐 View Portfolio</a>
+        <a href="https://www.linkedin.com/in/kartik-dhomne/" target="_blank" class="btn btn-secondary">LinkedIn</a>
+        <a href="mailto:kartikdhomne1997@gmail.com" class="btn btn-ghost">✉ Email Me</a>
+        <a href="https://github.com/kartikdhomne" target="_blank" class="btn btn-ghost">GitHub</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><span class="stat-num">3.5+</span><span class="stat-label">Years Exp</span></div>
+        <div class="stat"><span class="stat-num">40%</span><span class="stat-label">Faster Load Times</span></div>
+        <div class="stat"><span class="stat-num">+30%</span><span class="stat-label">Lighthouse Score</span></div>
+        <div class="stat"><span class="stat-num">99.9%</span><span class="stat-label">Uptime SLA</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="reveal">
+    <div class="section-label">01 · About</div>
+    <div class="section-title">Who I Am</div>
+    <div class="about-grid">
+      <div class="about-text">
+        <p>Hey! I'm Kartik — a <strong>Senior Frontend Engineer & Freelancer</strong> with 3.5+ years building production-grade web apps for US & EU clients at AccelerateBS.</p>
+        <p>I obsess over the details: <strong>pixel-perfect layouts</strong>, buttery animations, accessibility, Core Web Vitals, and SEO. I believe great UI is invisible — it just feels right.</p>
+        <p>My philosophy? <strong>Jack of all, master of some.</strong> I'm always learning, always shipping.</p>
+        <div class="about-beliefs">
+          <div class="belief"><div class="belief-icon">🎨</div><div class="belief-text"><strong>Design to Dev</strong>Turning Figma designs into pixel-perfect, accessible UIs</div></div>
+          <div class="belief"><div class="belief-icon">⚡</div><div class="belief-text"><strong>Performance First</strong>Code-splitting, lazy loading, 40% faster load times</div></div>
+          <div class="belief"><div class="belief-icon">♿</div><div class="belief-text"><strong>Accessible by Default</strong>WCAG 2.1 AA compliant on every project</div></div>
+          <div class="belief"><div class="belief-icon">✨</div><div class="belief-text"><strong>Motion Craft</strong>Framer Motion animations that delight, never distract</div></div>
+        </div>
+      </div>
+      <div class="impact-cards">
+        <div class="impact-card"><div class="impact-num">40%</div><div class="impact-desc">Faster page loads</div></div>
+        <div class="impact-card"><div class="impact-num">+30%</div><div class="impact-desc">Lighthouse boost</div></div>
+        <div class="impact-card"><div class="impact-num">AA</div><div class="impact-desc">WCAG 2.1 compliant</div></div>
+        <div class="impact-card"><div class="impact-num">99.9%</div><div class="impact-desc">Uptime SLA</div></div>
+        <div class="impact-card" style="grid-column:span 2"><div class="impact-num">US · EU · India</div><div class="impact-desc">Global distributed teams</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TECH STACK -->
+  <section id="stack" class="reveal">
+    <div class="section-label">02 · Stack</div>
+    <div class="section-title">Languages & Tools</div>
+    <div class="stack-categories">
+      <div>
+        <div class="stack-cat-label">— Languages —</div>
+        <div class="stack-pills">
+          <div class="pill"><span class="pill-icon">🟨</span>JavaScript</div>
+          <div class="pill"><span class="pill-icon">🔷</span>TypeScript</div>
+          <div class="pill"><span class="pill-icon">🟠</span>HTML5</div>
+          <div class="pill"><span class="pill-icon">🔵</span>CSS3</div>
+        </div>
+      </div>
+      <div>
+        <div class="stack-cat-label">— Frameworks & Libraries —</div>
+        <div class="stack-pills">
+          <div class="pill"><span class="pill-icon">⚛️</span>React.js</div>
+          <div class="pill"><span class="pill-icon">▲</span>Next.js</div>
+          <div class="pill"><span class="pill-icon">🟣</span>Redux</div>
+          <div class="pill"><span class="pill-icon">🌊</span>Tailwind CSS</div>
+          <div class="pill"><span class="pill-icon">🎭</span>Framer Motion</div>
+          <div class="pill"><span class="pill-icon">🟢</span>Node.js</div>
+          <div class="pill"><span class="pill-icon">🍃</span>MongoDB</div>
+          <div class="pill"><span class="pill-icon">💅</span>SCSS</div>
+          <div class="pill"><span class="pill-icon">🅱️</span>Bootstrap</div>
+        </div>
+      </div>
+      <div>
+        <div class="stack-cat-label">— Tools & Platforms —</div>
+        <div class="stack-pills">
+          <div class="pill"><span class="pill-icon">🎨</span>Figma</div>
+          <div class="pill"><span class="pill-icon">▲</span>Vercel</div>
+          <div class="pill"><span class="pill-icon">🔴</span>Git</div>
+          <div class="pill"><span class="pill-icon">🐙</span>GitHub</div>
+          <div class="pill"><span class="pill-icon">🔵</span>Jira</div>
+          <div class="pill"><span class="pill-icon">💚</span>Netlify</div>
+          <div class="pill"><span class="pill-icon">🔦</span>Lighthouse</div>
+          <div class="pill"><span class="pill-icon">🧪</span>BrowserStack</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="reveal">
+    <div class="section-label">03 · Experience</div>
+    <div class="section-title">Work History</div>
+    <div class="exp-list">
+      <div class="exp-item">
+        <div class="exp-date">Jul 2022<br/>— Present</div>
+        <div>
+          <div class="exp-dot"></div>
+          <div class="exp-role">Frontend Developer</div>
+          <div class="exp-company">🏢 AccelerateBS</div>
+          <ul class="exp-bullets">
+            <li>Improved page load times by <strong>40%</strong> via code splitting, lazy loading & component-level optimisation</li>
+            <li>Built fully <strong>WCAG 2.1 AA</strong> accessible UIs using Tailwind CSS + Framer Motion</li>
+            <li>Maintained <strong>99.9% uptime SLA</strong> on high-traffic production applications</li>
+            <li>Collaborated in Agile sprints with distributed <strong>US & EU</strong> teams</li>
+            <li>Boosted Lighthouse scores by <strong>30%</strong> across multiple production projects</li>
+          </ul>
+          <div class="exp-tags">
+            <span class="exp-tag">React</span><span class="exp-tag">Next.js</span>
+            <span class="exp-tag">TypeScript</span><span class="exp-tag">Tailwind</span>
+            <span class="exp-tag">Framer Motion</span><span class="exp-tag">Figma</span>
+          </div>
+        </div>
+      </div>
+      <div class="exp-item">
+        <div class="exp-date">Sep 2021<br/>— Jun 2022</div>
+        <div>
+          <div class="exp-dot"></div>
+          <div class="exp-role">Bootcamp Intern</div>
+          <div class="exp-company">🎓 Newton School</div>
+          <ul class="exp-bullets">
+            <li>Built hands-on projects: Recipe Finder · Weather App · Dogs Gallery</li>
+            <li>Practised <strong>Agile workflows</strong> with Git, React, Next.js & REST API integration</li>
+          </ul>
+          <div class="exp-tags">
+            <span class="exp-tag">React</span><span class="exp-tag">Next.js</span>
+            <span class="exp-tag">REST APIs</span><span class="exp-tag">Git</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section class="reveal">
+    <div class="section-label">04 · Education</div>
+    <div class="section-title">Academic Background</div>
+    <div class="edu-card">
+      <div class="edu-icon">🎓</div>
+      <div>
+        <div class="edu-degree">B.E. Mechanical Engineering</div>
+        <div class="edu-meta">Nagpur University &nbsp;·&nbsp; CGPA: <span>8.38</span> &nbsp;·&nbsp; 2015 – 2019</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INTERESTS -->
+  <section class="reveal">
+    <div class="section-label">05 · Beyond Code</div>
+    <div class="section-title">What I Enjoy</div>
+    <div class="interests-grid">
+      <div class="interest-card"><span class="interest-emoji">✈️</span><div class="interest-name">Travelling</div><div class="interest-sub">Exploring new places</div></div>
+      <div class="interest-card"><span class="interest-emoji">📚</span><div class="interest-name">Reading</div><div class="interest-sub">Tech & self-growth</div></div>
+      <div class="interest-card"><span class="interest-emoji">🎨</span><div class="interest-name">Crafting</div><div class="interest-sub">Creative hobbies</div></div>
+      <div class="interest-card"><span class="interest-emoji">🍳</span><div class="interest-name">Cooking</div><div class="interest-sub">Kitchen experiments</div></div>
+    </div>
+  </section>
+
+  <!-- CONNECT -->
+  <section id="connect" class="reveal">
+    <div class="connect-box">
+      <h2>Let's build something great 🚀</h2>
+      <p>Open to freelance projects & full-time opportunities. Let's connect!</p>
+      <div class="connect-links">
+        <a href="https://www.linkedin.com/in/kartik-dhomne/" target="_blank" class="btn btn-primary">LinkedIn</a>
+        <a href="mailto:kartikdhomne1997@gmail.com" class="btn btn-secondary">✉ kartikdhomne1997@gmail.com</a>
+        <a href="https://kartikdhomne.vercel.app" target="_blank" class="btn btn-secondary">🌐 Portfolio</a>
+        <a href="https://github.com/kartikdhomne" target="_blank" class="btn btn-ghost">GitHub</a>
+      </div>
+    </div>
+  </section>
+</div>
+
+<footer>
+  <span>kartik dhomne · frontend engineer · india 🇮🇳 · kartikdhomne1997@gmail.com</span>
+</footer>
+
+<script>
+// ── STARFIELD
+const canvas=document.getElementById('stars'),ctx=canvas.getContext('2d');
+let W,H,stars=[];
+function resize(){W=canvas.width=window.innerWidth;H=canvas.height=window.innerHeight;stars=Array.from({length:180},()=>({x:Math.random()*W,y:Math.random()*H,r:Math.random()*1.2+0.3,o:Math.random(),s:Math.random()*0.003+0.001}))}
+function drawStars(){ctx.clearRect(0,0,W,H);stars.forEach(s=>{s.o+=s.s;if(s.o>1||s.o<0)s.s*=-1;ctx.beginPath();ctx.arc(s.x,s.y,s.r,0,Math.PI*2);ctx.fillStyle=`rgba(167,139,250,${s.o*0.7})`;ctx.fill()})}
+function loop(){drawStars();requestAnimationFrame(loop)}
+resize();window.addEventListener('resize',resize);loop();
+
+// ── CURSOR GLOW
+const glow=document.getElementById('glow');
+document.addEventListener('mousemove',e=>{glow.style.left=e.clientX+'px';glow.style.top=e.clientY+'px'});
+
+// ── SCROLL REVEAL
+const observer=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');observer.unobserve(e.target)}})},{threshold:0.1});
+document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+
+// ── PILL 3D TILT
+document.querySelectorAll('.impact-card,.interest-card').forEach(card=>{
+  card.addEventListener('mousemove',e=>{
+    const r=card.getBoundingClientRect();
+    const x=(e.clientX-r.left)/r.width-0.5;
+    const y=(e.clientY-r.top)/r.height-0.5;
+    card.style.transform=`translateY(-3px) rotateX(${-y*8}deg) rotateY(${x*8}deg)`;
+    card.style.transition='transform 0.1s ease';
+  });
+  card.addEventListener('mouseleave',()=>{
+    card.style.transform='';card.style.transition='transform 0.4s ease';
+  });
+});
+
+// ── COUNTER ANIMATION
+function animateNum(el,target,suffix=''){
+  let start=0,dur=1800,startTime=null;
+  const step=t=>{
+    if(!startTime)startTime=t;
+    const p=Math.min((t-startTime)/dur,1);
+    const ease=1-Math.pow(1-p,4);
+    el.textContent=(Math.round(ease*target))+suffix;
+    if(p<1)requestAnimationFrame(step);
+  };
+  requestAnimationFrame(step);
+}
+const statObserver=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){
+      const nums=e.target.querySelectorAll('.stat-num');
+      nums[0]&&animateNum(nums[0],3,'y+');
+      nums[2]&&(nums[2].textContent='+30%');
+      nums[3]&&(nums[3].textContent='99.9%');
+      statObserver.unobserve(e.target);
+    }
+  });
+},{threshold:0.5});
+const heroSection=document.querySelector('.hero');
+if(heroSection)statObserver.observe(heroSection);
+</script>
+</body>
+</html>
