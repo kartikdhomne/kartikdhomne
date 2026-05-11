@@ -4,14 +4,14 @@
 
 <br/>
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=18&pause=1000&color=A78BFA&center=true&vCenter=true&width=600&lines=Hey+there!+I'm+Kartik+%F0%9F%91%8B;Senior+Frontend+Engineer+%F0%9F%9A%80;Pixel-perfect+UIs+%7C+WCAG+AA+%7C+SEO+%E2%9C%A8;40%25+faster+load+times+in+production+%E2%9A%A1;Open+to+Freelance+%26+Full-time+%F0%9F%8C%8D)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=18&pause=1000&color=A78BFA&center=true&vCenter=true&width=600&lines=Hey+there!+I'm+Kartik+%F0%9F%91%8B;3.8+Years+Experienced+Senior+Frontend+Engineer+%F0%9F%9A%80;Pixel-perfect+UIs+%7C+WCAG+AA+%7C+SEO+%E2%9C%A8;40%25+faster+load+times+in+production+%E2%9A%A1;Open+to+Freelance+%26+Full-time+%F0%9F%8C%8D)](https://git.io/typing-svg)
 
 <br/>
 
 <a href="https://www.linkedin.com/in/kartik-dhomne/">
   <img src="https://img.shields.io/badge/%F0%9F%94%97%20LinkedIn-0077B5?style=for-the-badge" />
 </a>
-<a href="https://kartikdhomne.github.io/kartikd-portfolio">
+<a href="https://kartikdhomne.vercel.app">
   <img src="https://img.shields.io/badge/%F0%9F%8C%90%20Portfolio-7c3aed?style=for-the-badge" />
 </a>
 <a href="mailto:kartikdhomne1997@gmail.com">
