@@ -1,143 +1,229 @@
 <div align="center">
 
-<!-- Dynamic Typing SVG Banner -->
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&pause=1000&color=22C55E&center=true&vCenter=true&width=600&lines=Hey+there%2C+I'm+Kartik+%F0%9F%91%8B;Frontend+Engineer+%F0%9F%9A%80;React+%7C+Next.js+%7C+TypeScript;Pixel-perfect+UI+craftsman+%F0%9F%8E%AF)](https://git.io/typing-svg)
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=180&section=header&text=Kartik%20Dhomne&fontSize=42&fontColor=fff&animation=twinkling&fontAlignY=32&desc=Frontend%20Engineer%20%7C%20React%20%C2%B7%20Next.js%20%C2%B7%20TypeScript&descAlignY=55&descSize=16" width="100%"/>
+
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=22&pause=1200&color=22C55E&center=true&vCenter=true&width=500&lines=3.5%2B+years+of+Frontend+Engineering;Pixel-perfect+%26+WCAG-compliant+UIs;40%25+faster+load+times+in+production;Open+to+exciting+opportunities+%F0%9F%9A%80)](https://git.io/typing-svg)
 
 <br/>
 
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/kartik-dhomne/)
+[![Portfolio](https://img.shields.io/badge/Portfolio-%2322c55e.svg?style=for-the-badge&logo=vercel&logoColor=white)](https://kartikdhomne.vercel.app)
+[![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:kartikdhomne1997@gmail.com)
+[![GitHub](https://img.shields.io/badge/GitHub-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/kartikdhomne)
+
 ![Profile Views](https://komarev.com/ghpvc/?username=kartikdhomne&label=Profile+Views&color=22c55e&style=for-the-badge)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/kartik-dhomne/)
-[![Portfolio](https://img.shields.io/badge/Portfolio-Visit-22c55e?style=for-the-badge&logo=vercel&logoColor=white)](https://kartikdhomne.vercel.app)
-[![Email](https://img.shields.io/badge/Email-Hire%20Me-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:kartikdhomne1997@gmail.com)
 
 </div>
 
----
+<br/>
 
-## 🧑‍💻 About Me
+## 👨‍💻 `whoami`
 
-```ts
-const kartik = {
-  role      : "Frontend Engineer",
-  location  : "India 🇮🇳",
-  experience: "3.5+ years",
-  company   : "AccelerateBS (July 2022 – Present)",
-  focus     : ["React", "Next.js", "TypeScript", "Performance", "a11y"],
-  superpower: "Turning Figma files into pixel-perfect, WCAG-compliant UIs",
-  belief    : "Jack of all, master of some 🎯",
+```typescript
+const kartik: Developer = {
+  name       : "Kartik S. Dhomne",
+  role       : "Frontend Engineer",
+  company    : "AccelerateBS",
+  location   : "India 🇮🇳",
+  experience : "3.5+ years",
+
+  stack      : ["React.js", "Next.js", "TypeScript", "Tailwind CSS"],
+  expertise  : ["Performance Optimization", "WCAG Accessibility", "SEO", "Animations"],
+  tools      : ["Figma", "Vercel", "Git", "Lighthouse", "BrowserStack"],
+
+  superpower : "Turning Figma designs into pixel-perfect, blazing-fast UIs",
+  currently  : "Building production-grade apps for US & EU clients 🌍",
+  openTo     : "Freelance projects & full-time opportunities",
 };
 ```
 
----
+<br/>
 
-## 🚀 Impact at a Glance
+## 📈 Impact at a Glance
 
-| Metric | Result |
-|--------|--------|
-| ⚡ Page Load Speed | **↑ 40%** improvement on production apps |
-| 🏆 Lighthouse Score | **↑ 30%** across multiple projects |
-| 🌍 Team Reach | Collaborated with **US & EU** distributed teams |
-| 🔒 Uptime | Maintained **99.9%** on high-traffic web apps |
-| ♿ Accessibility | **WCAG 2.1 AA** compliant on all major projects |
+<div align="center">
 
----
+|  | Metric | Achievement |
+|:---:|:---|:---|
+| ⚡ | **Page Load Speed** | Improved by **40%** on production apps |
+| 🏆 | **Lighthouse Score** | Boosted by **30%** across multiple projects |
+| 🌍 | **Global Teams** | Shipped with **US & EU** distributed teams |
+| 🔒 | **Uptime** | **99.9%** on high-traffic production apps |
+| ♿ | **Accessibility** | **WCAG 2.1 AA** compliant across all major projects |
+
+</div>
+
+<br/>
 
 ## 🛠️ Tech Stack
 
+<div align="center">
+
 **Languages**
 
-![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
-![TypeScript](https://img.shields.io/badge/TypeScript-Strict-3178C6?style=flat-square&logo=typescript&logoColor=white)
-![HTML5](https://img.shields.io/badge/HTML5-Semantic-E34F26?style=flat-square&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-Advanced-1572B6?style=flat-square&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+![TypeScript](https://img.shields.io/badge/TypeScript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
+![HTML5](https://img.shields.io/badge/HTML5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
 
 **Frameworks & Libraries**
 
-![React](https://img.shields.io/badge/React.js-Production-61DAFB?style=flat-square&logo=react&logoColor=black)
-![Next.js](https://img.shields.io/badge/Next.js-App+Router-000000?style=flat-square&logo=nextdotjs&logoColor=white)
-![Redux](https://img.shields.io/badge/Redux-Toolkit-764ABC?style=flat-square&logo=redux&logoColor=white)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind-CSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)
-![Framer Motion](https://img.shields.io/badge/Framer-Motion-0055FF?style=flat-square&logo=framer&logoColor=white)
-![Node.js](https://img.shields.io/badge/Node.js-Backend-339933?style=flat-square&logo=nodedotjs&logoColor=white)
+![React](https://img.shields.io/badge/React-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![Next.js](https://img.shields.io/badge/Next.js-black?style=for-the-badge&logo=next.js&logoColor=white)
+![Redux](https://img.shields.io/badge/Redux-%23593d88.svg?style=for-the-badge&logo=redux&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/Tailwind-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![Framer](https://img.shields.io/badge/Framer_Motion-black?style=for-the-badge&logo=framer&logoColor=blue)
+![NodeJS](https://img.shields.io/badge/Node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white)
+![SCSS](https://img.shields.io/badge/SCSS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white)
 
 **Tools & Platforms**
 
-![Figma](https://img.shields.io/badge/Figma-Design-F24E1E?style=flat-square&logo=figma&logoColor=white)
-![Vercel](https://img.shields.io/badge/Vercel-Deploy-000000?style=flat-square&logo=vercel&logoColor=white)
-![Git](https://img.shields.io/badge/Git-Version+Control-F05032?style=flat-square&logo=git&logoColor=white)
-![Lighthouse](https://img.shields.io/badge/Lighthouse-Performance-F97316?style=flat-square&logo=googlechrome&logoColor=white)
-![BrowserStack](https://img.shields.io/badge/BrowserStack-Testing-FF6C37?style=flat-square&logo=browserstack&logoColor=white)
+![Figma](https://img.shields.io/badge/Figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white)
+![Vercel](https://img.shields.io/badge/Vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white)
+![Git](https://img.shields.io/badge/Git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
+![Jira](https://img.shields.io/badge/Jira-%230A0FFF.svg?style=for-the-badge&logo=jira&logoColor=white)
+![Netlify](https://img.shields.io/badge/Netlify-%23000000.svg?style=for-the-badge&logo=netlify&logoColor=#00C7B7)
 
----
+</div>
 
-## 💼 Featured Projects
+<br/>
 
-### 🗂️ [Getivity](https://getivity.app) — Project & Time Tracker
-> Client and project management platform with task assignments, time tracking, and rich project dashboards.
+## 🚀 Featured Projects
 
-- 🔧 Built with **Next.js**, **React**, **Chakra UI**, and **Contentful CMS**
-- ⚙️ Leveraged Next.js **API routes**, **dynamic routing**, and **SSR** for performance at scale
-- 📊 Clean, data-dense UI optimised for daily power-user workflows
+<table>
+<tr>
+<td width="50%" valign="top">
 
-`Next.js` `React` `Chakra UI` `Contentful CMS` `SSR`
+### 🗂️ Getivity — Time Tracker
+[![Repo](https://img.shields.io/badge/Live-Visit%20Project-22c55e?style=flat-square&logo=vercel)](https://getivity.app)
 
----
+Project & client management tool with task assignments, time tracking, and rich dashboards.
 
-### 🏥 [Filsuvez](https://filsuvez.com) — Medical Info Platform
-> Responsive medical web portal built for global audiences with smooth transitions and strong accessibility.
+**Highlights:**
+- ⚙️ Next.js API routes, dynamic routing & SSR
+- 🎨 Clean, data-dense UI with Chakra UI
+- 📦 Headless CMS via Contentful
 
-- ✨ Smooth UI animations with **Framer Motion** and **Lottie**
-- ♿ **WCAG 2.1 AA** accessibility and full **SEO compliance**
-- 📱 Optimised for **mobile-first** responsive performance across all devices
+![Next.js](https://img.shields.io/badge/Next.js-black?style=flat-square&logo=next.js)
+![React](https://img.shields.io/badge/React-20232a?style=flat-square&logo=react&logoColor=61DAFB)
+![Chakra UI](https://img.shields.io/badge/Chakra_UI-319795?style=flat-square&logo=chakraui&logoColor=white)
 
-`Next.js` `Tailwind CSS` `Framer Motion` `Lottie` `SEO` `a11y`
+</td>
+<td width="50%" valign="top">
 
----
+### 🏥 Filsuvez — Medical Platform
+[![Repo](https://img.shields.io/badge/Live-Visit%20Project-22c55e?style=flat-square&logo=vercel)](https://filsuvez.com)
 
-### 🚚 [BrightDrop](https://brightdrop.com) — Logistics Dashboard
-> Modern logistics web app with a focus on UI performance, accessibility, and visual consistency.
+Responsive medical web portal built for global audiences with animations and full accessibility.
 
-- ⚡ Component-level performance optimisation and code-splitting
-- 🎯 Strong **Page SEO**, **accessibility**, and consistent design system
-- 🖼️ Built with **Framer Motion** for fluid, professional interactions
+**Highlights:**
+- ✨ Framer Motion & Lottie animations
+- ♿ WCAG 2.1 AA + SEO compliant
+- 📱 Mobile-first, high Lighthouse score
 
-`Next.js` `React` `Tailwind CSS` `Framer Motion` `Performance`
+![Next.js](https://img.shields.io/badge/Next.js-black?style=flat-square&logo=next.js)
+![TailwindCSS](https://img.shields.io/badge/Tailwind-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white)
+![Framer](https://img.shields.io/badge/Framer-black?style=flat-square&logo=framer&logoColor=blue)
 
----
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### 🚚 BrightDrop — Logistics App
+[![Repo](https://img.shields.io/badge/Live-Visit%20Project-22c55e?style=flat-square&logo=vercel)](https://brightdrop.com)
+
+Modern logistics dashboard focused on performance, accessibility, and visual consistency.
+
+**Highlights:**
+- ⚡ Component-level optimisation & code-splitting
+- 🎯 Page SEO + WCAG accessibility
+- 🖼️ Fluid Framer Motion interactions
+
+![Next.js](https://img.shields.io/badge/Next.js-black?style=flat-square&logo=next.js)
+![TailwindCSS](https://img.shields.io/badge/Tailwind-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white)
+![Framer](https://img.shields.io/badge/Framer-black?style=flat-square&logo=framer&logoColor=blue)
+
+</td>
+<td width="50%" valign="top">
+
+### 🧠 What I'm focused on
+<br/>
+
+```
+▸ Building pixel-perfect UIs
+▸ Squeezing Lighthouse scores to 100
+▸ Writing clean, typed TypeScript
+▸ Accessible & SEO-first development
+▸ Smooth animations with Framer Motion
+▸ Collaborating with global teams
+```
+
+</td>
+</tr>
+</table>
+
+<br/>
 
 ## 📊 GitHub Stats
 
 <div align="center">
 
-![Kartik's GitHub Stats](https://github-readme-stats.vercel.app/api?username=kartikdhomne&show_icons=true&theme=tokyonight&hide_border=true&count_private=true)
+<img height="180em" src="https://github-readme-stats.vercel.app/api?username=kartikdhomne&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true"/>
+<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=kartikdhomne&theme=tokyonight&hide_border=true&layout=compact&langs_count=8"/>
 
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=kartikdhomne&theme=tokyonight&hide_border=true&layout=compact)
+<br/>
 
-[![GitHub Streak](https://streak-stats.demolab.com?user=kartikdhomne&theme=tokyonight&hide_border=true)](https://git.io/streak-stats)
+[![GitHub Streak](https://streak-stats.demolab.com?user=kartikdhomne&theme=tokyonight&hide_border=true&date_format=j%20M%5B%20Y%5D)](https://git.io/streak-stats)
 
 </div>
 
----
+<br/>
+
+## 💼 Work Experience
+
+```
+┌─────────────────────────────────────────────────────────────────────┐
+│  🏢  AccelerateBS — Frontend Developer            Jul 2022 – Present │
+│      ▸ Production React / Next.js apps — 40% faster load times       │
+│      ▸ WCAG 2.1 AA accessible UIs with Tailwind + Framer Motion      │
+│      ▸ Worked with US/EU teams · 99.9% uptime SLA                    │
+├─────────────────────────────────────────────────────────────────────┤
+│  🎓  Newton School — Bootcamp Intern             Sep 2021 – Jun 2022 │
+│      ▸ Built projects: Recipe Finder, Weather App, Dogs Gallery      │
+│      ▸ Agile workflows, Git, React, Next.js + REST APIs              │
+└─────────────────────────────────────────────────────────────────────┘
+```
+
+<br/>
 
 ## 🎓 Education
 
-**Bachelor of Engineering, Mechanical** — Nagpur University *(CGPA: 8.38)*
-`Jul 2015 – May 2019`
+🎓 **Bachelor of Engineering, Mechanical** — Nagpur University &nbsp;|&nbsp; CGPA: **8.38** &nbsp;|&nbsp; `2015 – 2019`
 
----
+<br/>
 
 ## 🌱 Beyond the Code
 
-`✈️ Travelling` &nbsp; `📚 Reading` &nbsp; `🎨 Crafting` &nbsp; `🍳 Cooking`
+<div align="center">
 
----
+| ✈️ Travelling | 📚 Reading | 🎨 Crafting | 🍳 Cooking |
+|:---:|:---:|:---:|:---:|
+| Exploring new places | Tech & self-growth | Creative hobbies | Experimenting in kitchen |
+
+</div>
+
+<br/>
 
 <div align="center">
 
-**Let's build something great together.**
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=100&section=footer" width="100%"/>
 
-[![LinkedIn](https://img.shields.io/badge/-kartik--dhomne-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/kartik-dhomne/)
-[![Portfolio](https://img.shields.io/badge/-kartikdhomne.vercel.app-22c55e?style=for-the-badge&logo=vercel&logoColor=white)](https://kartikdhomne.vercel.app)
-[![Email](https://img.shields.io/badge/-kartikdhomne1997%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:kartikdhomne1997@gmail.com)
+**Let's build something great together 🚀**
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/kartik-dhomne/)
+[![Portfolio](https://img.shields.io/badge/Portfolio-%2322c55e.svg?style=for-the-badge&logo=vercel&logoColor=white)](https://kartikdhomne.vercel.app)
+[![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:kartikdhomne1997@gmail.com)
 
 </div>
