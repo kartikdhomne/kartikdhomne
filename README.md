@@ -4,7 +4,7 @@
 
 <br/>
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=16&pause=1200&color=A78BFA&center=true&vCenter=true&width=480&lines=3.5%2B+years+of+Frontend+Engineering+%F0%9F%9A%80;Pixel-perfect+%26+WCAG-compliant+UIs+%E2%99%BF;40%25+faster+load+times+in+production+%E2%9A%A1;Open+to+freelance+%26+full-time+opportunities+%F0%9F%91%8B)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=16&pause=1200&color=A78BFA&center=true&vCenter=true&width=480&lines=3.8%2B+years+of+Frontend+Engineering+%F0%9F%9A%80;Pixel-perfect+%26+WCAG-compliant+UIs+%E2%99%BF;40%25+faster+load+times+in+production+%E2%9A%A1;Open+to+freelance+%26+full-time+opportunities+%F0%9F%91%8B)](https://git.io/typing-svg)
 
 <br/>
 
@@ -25,7 +25,7 @@
 
 A **Senior Frontend Web Developer** 🎯 and **Freelancer** 🎨 from India.
 
-- 👨‍💻 3.5+ years building responsive, production-grade web apps for **US & EU clients**
+- 👨‍💻 3.8+ years building responsive, production-grade web apps for **US & EU clients**
 - 🚀 Passionate about **pixel-perfect UIs**, SEO, Lighthouse scores & animations
 - ♿ Every project ships **WCAG 2.1 AA** accessible by default
 - 📚 Philosophy: *Jack of all, master of some* — always learning, always shipping
