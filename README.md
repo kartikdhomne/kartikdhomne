@@ -39,7 +39,7 @@
 
 <img align="right" width="360" src="https://github-readme-stats.vercel.app/api?username=kartikdhomne&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&bg_color=0d1117&title_color=a78bfa&icon_color=06b6d4&text_color=e2e8f0"/>
 
-👋 Hey! I'm **Kartik** — a Senior Frontend Engineer & Freelancer from **India 🇮🇳**
+👋 Hey! I'm **Kartik** — a Senior Frontend Engineer & Freelancer from India 🇮🇳
 
 - 🏢 Currently at **AccelerateBS** building apps for US & EU clients
 - 🎯 Obsessed with **pixel-perfect UIs**, Core Web Vitals & SEO
