@@ -4,7 +4,7 @@
 
 <br/>
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=18&pause=1000&color=A78BFA&center=true&vCenter=true&width=600&lines=Hey+there!+I'm+Kartik+%F0%9F%91%8B;3.8+Years+Experienced+Senior+Frontend+Engineer+%F0%9F%9A%80;Pixel-perfect+UIs+%7C+WCAG+AA+%7C+SEO+%E2%9C%A8;40%25+faster+load+times+in+production+%E2%9A%A1;Open+to+Freelance+%26+Full-time+%F0%9F%8C%8D)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=18&pause=1000&color=A78BFA&center=true&vCenter=true&width=600&lines=Hey+there!+I'm+Kartik+%F0%9F%91%8B;4+Years+Experienced+Senior+Frontend+Engineer+%F0%9F%9A%80;Pixel-perfect+UIs+%7C+WCAG+AA+%7C+SEO+%E2%9C%A8;40%25+faster+load+times+in+production+%E2%9A%A1;Open+to+Freelance+%26+Full-time+%F0%9F%8C%8D)](https://git.io/typing-svg)
 
 <br/>
 
