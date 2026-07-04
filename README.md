@@ -30,9 +30,7 @@
 ---
 
 <div align="center">
-
 ### `< Who I Am />`
-
 </div>
 
 <br/>
